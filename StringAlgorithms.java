@@ -7,7 +7,14 @@ public class StringAlgorithms {
      */
     public static String printCharacters(String word) {
         // TODO: Implement this method
-        return "";
+        int inc = 0;
+        String letter = "";
+        while (inc <= word.length() - 1) {
+        letter += word.substring(inc, inc + 1) + "\n";
+        inc++;
+        
+        }
+        return letter;
     }
 
 
@@ -67,7 +74,8 @@ public class StringAlgorithms {
         System.out.println("Testing printCharacters:");
         // Example:
         // System.out.println(printCharacters("hello"));
-
+        System.out.println(printCharacters("HELLO"));
+        
         System.out.println("\nTesting reverseWord:");
         // Example:
         // System.out.println(reverseWord("hello"));
