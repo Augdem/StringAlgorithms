@@ -10,7 +10,7 @@ public class StringAlgorithms {
         int inc = 0;
         String letter = "";
         while (inc <= word.length() - 1) {
-        letter += "\n" +word.substring(inc, inc + 1);
+        letter += word.substring(inc, inc + 1) + "\n";
         inc++;
         
         }
