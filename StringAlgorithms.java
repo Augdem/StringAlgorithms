@@ -10,7 +10,7 @@ public class StringAlgorithms {
         int inc = 0;
         String letter = "";
         while (inc <= word.length() - 1) {
-        letter += word.substring(inc, inc + 1) + "\n";
+        letter += "\n" +word.substring(inc, inc + 1);
         inc++;
         
         }
@@ -25,7 +25,15 @@ public class StringAlgorithms {
      */
     public static String reverseWord(String word) {
         // TODO: Implement this method
-        return "";
+        int inc = 0;
+        String letter = "";
+        while (inc <= word.length() - 1) {
+        letter += word.substring(word.length() - inc - 1, word.length() - inc);
+        inc++;
+        
+        }
+        return letter;
+       
     }
 
 
@@ -74,11 +82,12 @@ public class StringAlgorithms {
         System.out.println("Testing printCharacters:");
         // Example:
         // System.out.println(printCharacters("hello"));
-        System.out.println(printCharacters("HELLO"));
+        System.out.println(printCharacters("bowl"));
         
         System.out.println("\nTesting reverseWord:");
         // Example:
         // System.out.println(reverseWord("hello"));
+        System.out.println(reverseWord("blyat, comrade, my stew is cold"));
 
         System.out.println("\nTesting capitalizeString:");
         // Example:
